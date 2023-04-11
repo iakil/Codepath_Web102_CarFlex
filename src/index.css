@@ -1,0 +1,268 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  color: #000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body, html{
+  margin: 0;
+  padding: 0;
+  
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+.all-content{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-columns: 1fr 9fr;
+  
+}
+
+.home-img{
+  margin-top: 30px;
+  border-radius: 8px;
+  width: clamp(200px, 40vw, 600px);
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-summary{
+  width: clamp(200px, 40vw, 600px);
+  margin-top: 30px;
+  border-radius: 8px;
+  height: 80px;
+  box-shadow: 2px 2px 5px 3px #534f4f;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.summary-title{
+  font-weight: 600;
+}
+
+.create-img{
+  margin-top: 50px;
+  width: clamp(50px, 15vw, 200px);
+}
+
+
+.nav-bar{
+  display: flex;
+  height: 100vh;
+  padding-top: 50px;
+  gap: 15px;
+  min-width: 120px;
+  background-color: #d532e7;
+  flex-direction: column;
+}
+
+a:link{
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+ 
+}
+
+a:link {color:#FFFAFA;}     
+a:visited {color:#FFFAFA;} 
+a:hover {color:#618cef;}  
+a:active {color:#cfc5c5;} 
+
+.create-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input{
+ border-radius: 8px;
+ outline: none;
+ border: none;
+ height: 20px;
+}
+
+.form-att{
+  border-radius: 8px;
+  width: 200px;
+  height: 180px;
+  background-color: rgb(136, 108, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create-form-type{
+  display: flex;
+  width: 190px;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.validation-box{
+  height: 16px;
+  width: 80%;
+  margin-top: 3px;
+  font-size: 10px;
+  color: rgb(207, 5, 5);
+  font-weight: 700;
+  text-align: start;
+}
+
+.create-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button{
+  padding: 12px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(3, 151, 3);
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(4, 116, 4);
+}
+.gallery{
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5vw;
+  overflow-y: auto;
+}
+.gallery-card{
+  background-color: #000000;
+  box-shadow: 1px 1px 6px 2px #bcbdb2;
+  width: 180px;
+  height: 200px;
+  text-align: left;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(157, 247, 13);
+
+}
+.gallery-card-attr{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+
+.gallery-card-attr div{
+  
+ display: flex;
+ width:150px;
+ justify-content: left;
+ 
+ 
+}
+
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inform-box{ 
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+
+.inform-box-display{
+  
+  background-color: rgb(0, 0, 0);
+  color: aqua;
+
+
+}
+
+.inform-box-disappear{
+  transform: scaleY(0);
+  transition: all 0.3s ease-out;
+}
+
+.update-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.update-page-attr-card{
+
+  width: 260px;
+  height: 180px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  align-self: center;
+  box-shadow: 2px 2px 5px 5px rgb(8, 217, 232);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+
+.gallery-card-buttons{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.gallery-card-button{
+  padding: 0;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+.clickable-block{
+ 
+  height: 30px;
+  width: 180px;
+}
